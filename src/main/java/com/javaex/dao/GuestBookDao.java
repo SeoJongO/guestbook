@@ -90,7 +90,8 @@ public class GuestBookDao {
 			query += "         password, ";
 			query += "         content, ";
 			query += "         reg_date ";
-			query += " from guestbook";
+			query += " from guestbook ";
+			query += " order by no asc ";
 
 			
 			pstmt = conn.prepareStatement(query); // 쿼리로 만들기
